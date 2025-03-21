@@ -4,7 +4,7 @@
   'active' => 'text-blue-500',
 ])
 
-@php($menu = Navi::build($name))
+@php($menu = Log1x\Navi\Navi::make()->build($name))
 
 @if ($menu->isNotEmpty())
   <ul {{ $attributes }}>
